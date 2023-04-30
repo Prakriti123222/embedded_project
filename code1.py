@@ -33,13 +33,10 @@ def get_values():
                 value = float(data)
             except:
                 value = 0
-        # analog_value = value * 3.3 / 4095
-        # print(value)
-        arr.append(value/10.0)
-        print(value/10.0)
+        arr.append(value)
+        print(value)
     return arr
-# with open('data.pkl', 'wb') as f:
-#     pickle.dump(arr, f)
+
 arr2 = get_data()
 with open('data1.pkl', 'wb') as q:
     pickle.dump(arr2, q)
